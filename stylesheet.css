@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#canvas {
+	width: 90vmin;
+	height: 90vmin;
+	background: #eee;
+	display: block;
+	margin: 5vmin auto 0;
+}
