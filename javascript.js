@@ -1,6 +1,6 @@
 // To Do: function refresh, mouse enabled
 // window.onload
-var n = 3;
+var n = parseInt(window.location.search.replace('?n=', ''), 10) || 3;
 var a, b;
 var vmin = window.innerWidth < window.innerHeight ? window.innerWidth : window.innerHeight;
 // var bgc = document.querySelector("#canvas").style.backgroundColor;
@@ -58,7 +58,7 @@ function load() {
 	createjs.Ticker.framerate = 60;
 	createjs.Ticker.on("tick", stage);
 
-	// setTimeout(start, 1000);
+	setTimeout(start, 1000);
 
 	document.addEventListener('keyup', move);
 	button.addEventListener('click', start);
